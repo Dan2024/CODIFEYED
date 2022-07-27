@@ -3,7 +3,7 @@ import p5 from 'p5'
 import './SortComponent.css'
 import sketch from '../p5/p5SketchHelper'
 
-export default function QuickSortComponent() {
+export default function BubbleSortComponent() {
   const p5ContainerRef = useRef()
   let p5Instance = useRef()
 
@@ -16,7 +16,7 @@ export default function QuickSortComponent() {
   }, [])
 
   function handleClick() {
-    p5Instance.current.quickSortP5()
+    p5Instance.current.bubbleSortP5()
   }
 
   return (

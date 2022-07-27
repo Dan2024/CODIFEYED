@@ -1,4 +1,5 @@
 import quickSort from '../algorithms/quickSortAlg'
+import bubbleSort from '../algorithms/bubbleSortAlg'
 
 export default function sketch(p) {
   let values
@@ -23,5 +24,9 @@ export default function sketch(p) {
 
   p.quickSortP5 = function () {
     quickSort(values, 0, values.length)
+  }
+
+  p.bubbleSortP5 = function () {
+    bubbleSort(values, 0, values.length)
   }
 }
