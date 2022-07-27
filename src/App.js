@@ -1,12 +1,10 @@
 import './App.css'
-import QuickSortComponent from './sort/QuickSortComponent'
+import QuickSortComponent from './sort-components/QuickSortComponent'
 
-function App() {
+export default function App() {
   return (
     <div>
       <QuickSortComponent />
     </div>
   )
 }
-
-export default App
