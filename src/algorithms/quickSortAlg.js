@@ -25,7 +25,7 @@ async function partition(arr, start, end) {
 }
 
 async function swap(arr, a, b) {
-  await sleep(25)
+  await sleep(20)
   let temp = arr[a]
   arr[a] = arr[b]
   arr[b] = temp
