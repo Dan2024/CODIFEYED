@@ -1,6 +1,7 @@
 import quickSort from '../algorithms/quickSortAlg'
 import bubbleSort from '../algorithms/bubbleSortAlg'
 import selectionSort from '../algorithms/selectionSortAlg'
+import insertionSort from '../algorithms/insertionSortAlg'
 
 export default function sketch(p) {
   let values
@@ -28,10 +29,14 @@ export default function sketch(p) {
   }
 
   p.bubbleSortP5 = function () {
-    bubbleSort(values, 0, values.length)
+    bubbleSort(values)
   }
 
   p.selectionSortP5 = function () {
-    selectionSort(values, 0, values.length)
+    selectionSort(values)
+  }
+
+  p.insertionSortP5 = function () {
+    insertionSort(values)
   }
 }
