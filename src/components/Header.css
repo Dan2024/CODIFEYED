@@ -58,18 +58,22 @@ span {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
   .three-col-grid__expand-two {
     display: block;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .nav-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     place-items: center;
+  }
+
+  .header-title {
+    margin: 0 auto;
   }
 
   .nav-list-item {

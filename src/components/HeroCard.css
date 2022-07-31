@@ -60,3 +60,21 @@
   border: #183446 1px solid;
   transition: 0.5s;
 }
+
+@media only screen and (max-width: 670px) {
+  .hero-styling-card,
+  .hero-card {
+    height: 35vh;
+  }
+  .hero-card__title {
+    font-size: 1.5rem;
+  }
+  .hero-card__text {
+    font-size: 1rem;
+  }
+  .hero-card__link {
+    font-size: 1rem;
+    width: 50%;
+    margin: 1rem;
+  }
+}
