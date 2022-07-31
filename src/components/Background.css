@@ -9,17 +9,18 @@
   grid-area: 1 / 1;
 }
 
-.accent-pattern {
-  position: absolute;
-  height: 10rem;
+/* .accent-pattern {
+  position: fixed;
+  height: 30vh;
   width: 30rem;
-  top: 0;
-  right: 0;
+  top: 40vh;
+  left: 5vh;
+  z-index: -2;
   background: #fff;
   filter: contrast(7);
 }
 .accent-pattern::before {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -27,3 +28,23 @@
   background: radial-gradient(#ff5733, transparent) 0 0/ 1em 1em space;
   content: '';
 }
+
+.primary-pattern {
+  position: fixed;
+  height: 10vh;
+  width: 10rem;
+  top: 15vh;
+  right: 2vh;
+  z-index: -2;
+  background: #fff;
+  filter: contrast(10);
+}
+.primary-pattern::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(#ff5733, transparent) 0 0/ 1em 1em space;
+  content: '';
+} */

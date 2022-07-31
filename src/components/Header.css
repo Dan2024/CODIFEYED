@@ -1,9 +1,12 @@
 .header {
+  position: sticky;
+  top: 0;
+  background: white;
   max-width: 100rem;
   margin: 0 auto;
+  z-index: 10;
   margin-bottom: 1rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgb(210, 197, 197);
 }
 
 .header-title {
