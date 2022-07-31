@@ -1,0 +1,11 @@
+.background {
+  position: fixed;
+  top: 75vh;
+  left: 0;
+  z-index: -10;
+  height: 25vh;
+  width: 100vw;
+  background-color: #183446;
+  grid-area: 1 / 1;
+}
+/* #FF5733 */
