@@ -64,7 +64,7 @@
 @media only screen and (max-width: 670px) {
   .hero-styling-card,
   .hero-card {
-    height: 35vh;
+    height: 15rem;
   }
   .hero-card__title {
     font-size: 1.5rem;
