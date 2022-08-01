@@ -18,7 +18,8 @@ export default function AlgorithmVisualizer() {
             <div className='algorithm-card__info-container'>
               <div className='algorithm-card__title'>Bubble Sort</div>
               <div className='algorithm-card__info-text'>
-                Bubble sort is a sorting algorithm that compares{' '}
+                Bubble sort, sometimes referred to as sinking sort is a sorting
+                algorithm that compares{' '}
                 <span className='highlighted-text'>two adjacent elements</span>{' '}
                 and <span className='highlighted-text'>swaps</span> them until
                 they are in the intended order.

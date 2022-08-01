@@ -31,6 +31,13 @@ export default function sketch(p) {
     }
   }
 
+  p.resetArray = function () {
+    values = new Array(p.floor(p.width / w))
+    for (let i = 0; i < values.length; i++) {
+      values[i] = p.random(p.height)
+    }
+  }
+
   p.bubbleSortP5 = function () {
     bubbleSort(values)
   }

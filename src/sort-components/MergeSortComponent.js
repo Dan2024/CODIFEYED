@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 import p5 from 'p5'
 import './SortComponent.css'
 import sketch from '../p5/p5SketchHelper'
+import { AlgButton } from '../styledComponents/AlgButtonStyledComp'
+import { BigO } from '../styledComponents/BigOStyledComp'
 
 export default function MergeSortComponent() {
   const p5ContainerRef = useRef()
@@ -15,14 +17,19 @@ export default function MergeSortComponent() {
     }
   }, [])
 
-  function handleClick() {
+  function handleClickVisualize() {
     p5Instance.current.mergeSortP5()
+  }
+  function handleClickReset() {
+    p5Instance.current.resetArray()
   }
 
   return (
     <div>
-      <button onClick={handleClick}>visualise</button>
       <div ref={p5ContainerRef}></div>
+      <AlgButton onClick={handleClickVisualize}>Visualise</AlgButton>
+      <AlgButton onClick={handleClickReset}>Reset</AlgButton>
+      <BigO>O(n log(n))</BigO>
     </div>
   )
 }
