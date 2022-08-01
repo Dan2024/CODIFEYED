@@ -14,6 +14,47 @@ export default function AlgorithmVisualizer() {
         <li className='algorithm-styling__container'>
           <div className='algorithm-styling__card'></div>
           <div className='algorithm-card'>
+            <MergeSortComponent />
+            <div className='algorithm-card__info-container'>
+              <div className='algorithm-card__title'>Merge Sort</div>
+              <div className='algorithm-card__info-text'>
+                A merge sort uses a technique called{' '}
+                <span className='highlighted-text'>divide and conquer</span>.{' '}
+                The list is repeatedly divided into two until all the elements
+                are separated individually. Pairs of elements are then{' '}
+                <span className='highlighted-text'>
+                  compared, placed into order and combined.
+                </span>{' '}
+                The process is then repeated until the list is recompiled as a
+                whole.
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li className='algorithm-styling__container'>
+          <div className='algorithm-styling__card'></div>
+          <div className='algorithm-card'>
+            <QuickSortComponent />
+            <div className='algorithm-card__info-container'>
+              <div className='algorithm-card__title'>Quick Sort</div>
+              <div className='algorithm-card__info-text'>
+                Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It
+                picks an element as a{' '}
+                <span className='highlighted-text'>pivot</span> and{' '}
+                <span className='highlighted-text'>partitions</span> the given
+                array around the{' '}
+                <span className='highlighted-text'>picked pivot</span>. There
+                are many different versions of Quick Sort that pick pivot in
+                different ways.
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li className='algorithm-styling__container'>
+          <div className='algorithm-styling__card'></div>
+          <div className='algorithm-card'>
             <BubbleSortComponent />
             <div className='algorithm-card__info-container'>
               <div className='algorithm-card__title'>Bubble Sort</div>
@@ -61,47 +102,6 @@ export default function AlgorithmVisualizer() {
                 <span className='highlighted-text'>picked and placed</span> at
                 the correct position in the{' '}
                 <span className='highlighted-text'>sorted part.</span>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li className='algorithm-styling__container'>
-          <div className='algorithm-styling__card'></div>
-          <div className='algorithm-card'>
-            <MergeSortComponent />
-            <div className='algorithm-card__info-container'>
-              <div className='algorithm-card__title'>Merge Sort</div>
-              <div className='algorithm-card__info-text'>
-                A merge sort uses a technique called{' '}
-                <span className='highlighted-text'>divide and conquer</span>.{' '}
-                The list is repeatedly divided into two until all the elements
-                are separated individually. Pairs of elements are then{' '}
-                <span className='highlighted-text'>
-                  compared, placed into order and combined.
-                </span>{' '}
-                The process is then repeated until the list is recompiled as a
-                whole.
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li className='algorithm-styling__container'>
-          <div className='algorithm-styling__card'></div>
-          <div className='algorithm-card'>
-            <QuickSortComponent />
-            <div className='algorithm-card__info-container'>
-              <div className='algorithm-card__title'>Quick Sort</div>
-              <div className='algorithm-card__info-text'>
-                Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It
-                picks an element as a{' '}
-                <span className='highlighted-text'>pivot</span> and{' '}
-                <span className='highlighted-text'>partitions</span> the given
-                array around the{' '}
-                <span className='highlighted-text'>picked pivot</span>. There
-                are many different versions of Quick Sort that pick pivot in
-                different ways.
               </div>
             </div>
           </div>
