@@ -9,32 +9,43 @@ export default function HomePage() {
       </div>
 
       <ul className='hero-card__list'>
-        <HeroCard
-          title={'Algorithm Visualizer'}
-          text={
-            'watch many of the most well-known sorting algorithms in action.'
-          }
-          linkPathName={'algorithm-visualizer'}
-        />
-        <HeroCard
-          title={'Fractal Forest'}
-          text={
-            'explore a forest of fractal trees made with recursive functions.'
-          }
-          linkPathName={'fractal-forest'}
-        />
-        <HeroCard
-          title={'Pendulum'}
-          text={
-            'create your own masterpiece with the help of our double pendulum.'
-          }
-          linkPathName={'pendulum'}
-        />
-        <HeroCard
-          title={'Playground'}
-          text={'currently under construction 🚧 ...'}
-          linkPathName={'playground'}
-        />
+        <li className='hero-card__styling-container'>
+          <HeroCard
+            title={'Algorithm Visualizer'}
+            text={
+              'watch many of the most well-known sorting algorithms in action.'
+            }
+            linkPathName={'algorithm-visualizer'}
+          />
+        </li>
+
+        <li className='hero-card__styling-container'>
+          <HeroCard
+            title={'Fractal Forest'}
+            text={
+              'explore a forest of fractal trees made with recursive functions.'
+            }
+            linkPathName={'fractal-forest'}
+          />
+        </li>
+
+        <li className='hero-card__styling-container'>
+          <HeroCard
+            title={'Pendulum'}
+            text={
+              'create your own masterpiece with the help of our double pendulum.'
+            }
+            linkPathName={'pendulum'}
+          />
+        </li>
+
+        <li className='hero-card__styling-container'>
+          <HeroCard
+            title={'Playground'}
+            text={'currently under construction 🚧 ...'}
+            linkPathName={'playground'}
+          />
+        </li>
       </ul>
     </div>
   )
