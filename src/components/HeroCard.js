@@ -1,6 +1,7 @@
 import './HeroCard.css'
+import { HeroButtonLink } from '../styledComponents/HeroButtonLinkStyledComp'
 
-export default function HeroCard({ title, text }) {
+export default function HeroCard({ title, text, linkPathName }) {
   return (
     <li className='hero-card__styling-container'>
       <div className='hero-styling-card'></div>
@@ -8,7 +9,7 @@ export default function HeroCard({ title, text }) {
         <div className='hero-card__title'>{title}</div>
         <div className='hero-card__text'>{text}</div>
       </div>
-      <div className='hero-card__link'>Take Me There</div>
+      <HeroButtonLink to={linkPathName}>Take Me There</HeroButtonLink>
     </li>
   )
 }

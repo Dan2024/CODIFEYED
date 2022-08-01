@@ -1,30 +1,39 @@
 import './Header.css'
+import { Link } from 'react-router-dom'
+import { Button } from '../styledComponents/ButtonSyledComp'
 
 export default function Header() {
   return (
     <div className='header three-col-grid__expand-two'>
-      <div className='header-title'>
-        CODIF<span>EYE</span>D
-      </div>
+      <Link to={'/'} style={{ textDecoration: 'none', color: 'black' }}>
+        <div className='header-title'>
+          CODIF<span>EYE</span>D
+        </div>
+      </Link>
 
       <div className='spacer'></div>
 
       <ul className='nav-list grid__auto-columns'>
-        <button className='nav-list-item'>
-          <li>Algorithm Visualizer</li>
-        </button>
-
-        <button className='nav-list-item'>
-          <li>Fractal Forest</li>
-        </button>
-
-        <button className='nav-list-item'>
-          <li>Pendulum</li>
-        </button>
-
-        <button className='nav-list-item'>
-          <li>PlayGround</li>
-        </button>
+        <li>
+          <Link to='algorithm-visualizer'>
+            <Button>Algorithm Visualizer</Button>
+          </Link>
+        </li>
+        <li>
+          <Link to='fractal-forest'>
+            <Button>Fractal Forest</Button>
+          </Link>
+        </li>
+        <li>
+          <Link to='pendulum'>
+            <Button>Pendulum</Button>
+          </Link>
+        </li>
+        <li>
+          <Link to='playground'>
+            <Button>PlayGround</Button>
+          </Link>
+        </li>
       </ul>
     </div>
   )

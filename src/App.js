@@ -1,13 +1,9 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import QuickSortComponent from './sort-components/QuickSortComponent'
-import BubbleSortComponent from './sort-components/BubbleSortComponent'
 import HomePage from './pages/HomePage'
-import SelectionSortComponent from './sort-components/SelectionSortComponent'
-import InsertionSortComponent from './sort-components/InsertionSortComponent'
-import MergeSortComponent from './sort-components/MergeSortComponent'
 import Background from './components/Background'
 import Header from './components/Header'
+import AlgorithmVisualizer from './pages/AlgorithmVisualizer'
 
 export default function App() {
   return (
@@ -15,12 +11,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        {/* <Route path='test' element={<QuickSortComponent />} /> */}
-        {/* <QuickSortComponent />
-    <BubbleSortComponent />
-    <SelectionSortComponent />
-    <InsertionSortComponent />
-    <MergeSortComponent /> */}
+        <Route path='algorithm-visualizer' element={<AlgorithmVisualizer />} />
       </Routes>
       <Background />
     </>

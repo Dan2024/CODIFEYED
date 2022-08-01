@@ -14,22 +14,26 @@ export default function HomePage() {
           text={
             'watch many of the most well-known sorting algorithms in action.'
           }
+          linkPathName={'algorithm-visualizer'}
         />
         <HeroCard
           title={'Fractal Forest'}
           text={
             'explore a forest of fractal trees made with recursive functions.'
           }
+          linkPathName={'fractal-forest'}
         />
         <HeroCard
           title={'Pendulum'}
           text={
             'create your own masterpiece with the help of our double pendulum.'
           }
+          linkPathName={'pendulum'}
         />
         <HeroCard
           title={'Playground'}
           text={'currently under construction 🚧 ...'}
+          linkPathName={'playground'}
         />
       </ul>
     </div>
