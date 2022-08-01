@@ -11,7 +11,7 @@ export default function sketch(p) {
   let values
 
   p.setup = function () {
-    p.createCanvas(400, 300)
+    p.createCanvas(550, 300)
     if (sharedValues.length === 0) {
       sharedValues = new Array(p.floor(p.width / w))
       for (let i = 0; i < sharedValues.length; i++) {
@@ -23,10 +23,10 @@ export default function sketch(p) {
   }
 
   p.draw = function () {
-    p.background(51)
+    p.background(255)
     for (let i = 0; i < values.length; i++) {
-      p.stroke(0)
-      p.fill(225)
+      p.stroke(1)
+      p.fill(24, 52, 70)
       p.rect(i * w, p.height - values[i], w, values[i])
     }
   }

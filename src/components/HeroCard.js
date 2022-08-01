@@ -9,7 +9,9 @@ export default function HeroCard({ title, text, linkPathName }) {
         <div className='hero-card__title'>{title}</div>
         <div className='hero-card__text'>{text}</div>
       </div>
-      <HeroButtonLink to={linkPathName}>Take Me There</HeroButtonLink>
+      {linkPathName && (
+        <HeroButtonLink to={linkPathName}>Take Me There</HeroButtonLink>
+      )}
     </>
   )
 }
