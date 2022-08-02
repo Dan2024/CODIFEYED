@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import p5 from 'p5'
-import './SortComponent.css'
-import sketch from '../p5/p5SketchHelper'
+import AlgorithmSketch from '../p5/p5AlgorithmsSketch'
 import { AlgButton } from '../styledComponents/AlgButtonStyledComp'
 import { BigO } from '../styledComponents/BigOStyledComp'
 
@@ -10,7 +9,7 @@ export default function SelectionSortComponent() {
   let p5Instance = useRef()
 
   useEffect(() => {
-    p5Instance.current = new p5(sketch, p5ContainerRef.current)
+    p5Instance.current = new p5(AlgorithmSketch, p5ContainerRef.current)
 
     return () => {
       p5Instance.current.remove()

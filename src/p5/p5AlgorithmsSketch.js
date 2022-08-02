@@ -6,7 +6,7 @@ import mergeSort from '../algorithms/mergeSortAlg'
 
 let sharedValues = []
 
-export default function sketch(p) {
+export default function algorithmSketch(p) {
   let w = 5
   let values
 
