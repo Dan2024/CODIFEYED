@@ -4,9 +4,9 @@ export const AlgButton = styled.button`
   padding-inline: 1rem;
   box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
   border-radius: 1rem;
-  border: 1px solid rgb(210, 115, 0);
-  background-color: rgb(210, 115, 0);
-  color: white;
+  color: #183446;
+  border: #183446 1px solid;
+  background-color: transparent;
   font-family: poppins;
   font-size: 0.9rem;
   height: 1.5rem;
@@ -17,8 +17,8 @@ export const AlgButton = styled.button`
 
   &:hover {
     background-color: transparent;
-    color: #183446;
-    border: #183446 1px solid;
+    color: rgb(210, 115, 0);
+    border: rgb(210, 115, 0) 1px solid;
     transition: 0.5s;
     cursor: pointer;
   }

@@ -35,7 +35,6 @@ export default function AlgorithmVisualizer() {
         <li className='algorithm-styling__container'>
           <div className='algorithm-styling__card'></div>
           <div className='algorithm-card'>
-            <QuickSortComponent />
             <div className='algorithm-card__info-container'>
               <div className='algorithm-card__title'>Quick Sort</div>
               <div className='algorithm-card__info-text'>
@@ -49,6 +48,7 @@ export default function AlgorithmVisualizer() {
                 different ways.
               </div>
             </div>
+            <QuickSortComponent />
           </div>
         </li>
 
@@ -72,7 +72,6 @@ export default function AlgorithmVisualizer() {
         <li className='algorithm-styling__container'>
           <div className='algorithm-styling__card'></div>
           <div className='algorithm-card'>
-            <SelectionSortComponent />
             <div className='algorithm-card__info-container'>
               <div className='algorithm-card__title'>Selection Sort</div>
               <div className='algorithm-card__info-text'>
@@ -83,6 +82,7 @@ export default function AlgorithmVisualizer() {
                 unsorted list.
               </div>
             </div>
+            <SelectionSortComponent />
           </div>
         </li>
 
