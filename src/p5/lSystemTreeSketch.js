@@ -163,6 +163,7 @@ export default function customizableTreeSketch(p) {
       tree = p.getNewTree()
       tree.clear(tree)
       p.clear()
+      p.background(220)
     })
   }
 

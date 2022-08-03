@@ -41,7 +41,7 @@ export default function FractalForest() {
             <LSystemTree />
             <div className='tree-card__info-container'>
               <div className='tree-card__title'>
-                Lindenmayer-system Fractal Trees
+                Lindenmayer-System Fractal Trees
               </div>
               <div className='tree-card__info-text'>
                 Lindenmayer-systems (l-systems) were developed by a Hungarian
