@@ -25,7 +25,7 @@ export default function standardTreeSketch(p) {
   }
 
   p.draw = function () {
-    p.background(51)
+    p.background(220)
 
     for (let i = 0; i < tree.length; i++) {
       tree[i].show()
@@ -39,13 +39,8 @@ export default function standardTreeSketch(p) {
       this.finished = false
     }
 
-    // jitter() {
-    //   this.end.x += p.random(-1, 1)
-    //   this.end.y += p.random(-1, 1)
-    // }
-
     show() {
-      p.stroke(255)
+      p.stroke(24, 52, 70)
       p.line(this.begin.x, this.begin.y, this.end.x, this.end.y)
     }
 

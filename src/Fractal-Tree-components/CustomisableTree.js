@@ -21,8 +21,8 @@ export default function CustomizableTree() {
 
   return (
     <div>
-      <AlgButton onClick={handleClick}>New Tree</AlgButton>
       <div ref={p5ContainerRef}></div>
+      <AlgButton onClick={handleClick}>New Tree</AlgButton>
     </div>
   )
 }

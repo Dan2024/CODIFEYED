@@ -1,7 +1,7 @@
 export default function customizableTreeSketch(p) {
   const lSystemTreeObj1 = {
-    len: 100,
-    lenMult: 0.55,
+    len: 110,
+    lenMult: 0.6,
     axiom: 'F',
     angle: p.radians(p.random(20, 30)),
     rules: [
@@ -18,11 +18,15 @@ export default function customizableTreeSketch(p) {
         b: '-FX',
       },
     ],
+    clear: function (tree) {
+      tree.len = 110
+      tree.axiom = 'F'
+    },
   }
 
   const lSystemTreeObj2 = {
-    len: 100,
-    lenMult: 0.79,
+    len: 110,
+    lenMult: 0.83,
     axiom: 'VZFFF',
     angle: p.radians(p.random(20, 30)),
     rules: [
@@ -47,11 +51,15 @@ export default function customizableTreeSketch(p) {
         b: '[-FFF][+FFF]F',
       },
     ],
+    clear: function (tree) {
+      tree.len = 110
+      tree.axiom = 'VZFFF'
+    },
   }
 
   const lSystemTreeObj3 = {
-    len: 100,
-    lenMult: 0.55,
+    len: 110,
+    lenMult: 0.63,
     axiom: 'Y',
     angle: p.radians(p.random(20, 30)),
     rules: [
@@ -64,11 +72,15 @@ export default function customizableTreeSketch(p) {
         b: 'YFX[+Y][-Y]',
       },
     ],
+    clear: function (tree) {
+      tree.len = 110
+      tree.axiom = 'Y'
+    },
   }
 
   const lSystemTreeObj4 = {
-    len: 100,
-    lenMult: 0.53,
+    len: 110,
+    lenMult: 0.57,
     axiom: 'X',
     angle: p.radians(p.random(20, 30)),
     rules: [
@@ -81,11 +93,15 @@ export default function customizableTreeSketch(p) {
         b: 'F-[[X]+X]+F[+FX]-X',
       },
     ],
+    clear: function (tree) {
+      tree.len = 110
+      tree.axiom = 'X'
+    },
   }
 
   const lSystemTreeObj5 = {
-    len: 100,
-    lenMult: 0.45,
+    len: 120,
+    lenMult: 0.55,
     axiom: 'F',
     angle: p.radians(p.random(20, 30)),
     rules: [
@@ -94,12 +110,16 @@ export default function customizableTreeSketch(p) {
         b: 'F[+FF][-FF]F[-F][+F]F',
       },
     ],
+    clear: function (tree) {
+      tree.len = 120
+      tree.axiom = 'F'
+    },
   }
 
   const lSystemTreeObj6 = {
-    len: 100,
-    lenMult: 0.5,
+    len: 120,
     axiom: 'F',
+    lenMult: 0.57,
     angle: p.radians(p.random(20, 30)),
     rules: [
       {
@@ -107,6 +127,10 @@ export default function customizableTreeSketch(p) {
         b: 'FF+[+F-F-F]-[-F+F+F]',
       },
     ],
+    clear: function (tree) {
+      tree.len = 120
+      tree.axiom = 'F'
+    },
   }
 
   const lSystemTrees = [
@@ -117,26 +141,29 @@ export default function customizableTreeSketch(p) {
     lSystemTreeObj5,
     lSystemTreeObj6,
   ]
-
-  p.getRandomTree = function () {
-    return lSystemTrees[[Math.floor(Math.random() * lSystemTrees.length)]]
+  let num = 0
+  p.getNewTree = function () {
+    if (num < lSystemTrees.length) num++
+    if (num === lSystemTrees.length) num = 0
+    return lSystemTrees[[num]]
   }
 
-  let tree = p.getRandomTree()
+  let tree = p.getNewTree()
 
   p.setup = function () {
-    p.createCanvas(400, 400)
-    p.background(51)
+    p.createCanvas(600, 700)
+    p.background(220)
     p.drawTree()
 
     let button = p.createButton('generate')
     button.mousePressed(p.generate)
 
-    // let newTreeBtn = p.createButton('new tree')
-    // newTreeBtn.mousePressed(() => {
-
-    //   tree = p.getRandomTree
-    // })
+    let newTreeBtn = p.createButton('new tree')
+    newTreeBtn.mousePressed(() => {
+      tree = p.getNewTree()
+      tree.clear(tree)
+      p.clear()
+    })
   }
 
   p.generate = function () {
@@ -163,10 +190,10 @@ export default function customizableTreeSketch(p) {
   }
 
   p.drawTree = function () {
-    p.background(51)
+    p.background(220)
     p.resetMatrix()
     p.translate(p.width / 2, p.height)
-    p.stroke(255, 100)
+    p.stroke(24, 52, 70)
 
     for (let i = 0; i < tree.axiom.length; i++) {
       switch (tree.axiom[i]) {
