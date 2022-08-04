@@ -89,15 +89,12 @@ export default function FractalForest() {
                 Randomly Generated Fractal Tree
               </div>
               <div className='tree-card__info-text'>
-                A merge sort uses a technique called{' '}
-                <span className='highlighted-text'>divide and conquer</span>.{' '}
-                The list is repeatedly divided into two until all the elements
-                are separated individually. Pairs of elements are then{' '}
-                <span className='highlighted-text'>
-                  compared, placed into order and combined.
-                </span>{' '}
-                The process is then repeated until the list is recompiled as a
-                whole.
+                These fractal trees again use recurion however in this case the{' '}
+                <span className='highlighted-text'>angle</span> at which the
+                branches branch off at and the{' '}
+                <span className='highlighted-text'>length</span> of each branch
+                has been <span className='highlighted-text'>randomised</span>.
+                This produces a variety of different looking trees.
               </div>
             </div>
             <CustomizableTree />

@@ -24,26 +24,8 @@ export default function customizableTreeSketch(p) {
       p.branch(len * p.random(0.7, 0.9))
     } else {
       p.ellipse(0, 0, 4)
-      const r = 14 + p.random(-20, 0)
-      const g = 60 + p.random(-20, 0)
-      const b = 28 + p.random(-20, 0)
-      p.fill(r, g, b, 150)
+      p.fill(14, 60, 28, 150)
       p.noStroke()
-
-      // p.beginShape()
-      // for (let i = 45; i < 135; i++) {
-      //   const rad = 15
-      //   const x = rad * p.cos(i)
-      //   const y = rad * p.sin(i)
-      //   p.vertex(x, y)
-      // }
-      // // for (let i = 135; i > 40; i--) {
-      // //   const rad = 15
-      // //   const x = rad * p.cos(i)
-      // //   const y = rad * p.sin(-i) + 20
-      // //   p.vertex(x, y)
-      // // }
-      // p.endShape(p.CLOSE)
     }
     p.pop()
 
