@@ -75,6 +75,7 @@
 .pendulum-card__info-text {
   text-align: center;
   margin-top: 5%;
+  margin-bottom: 3rem;
 }
 
 .highlighted-text {
@@ -84,4 +85,8 @@
 
 a {
   color: rgb(119, 119, 119);
+}
+
+.test {
+  display: block;
 }

@@ -4,32 +4,22 @@ export default function pendulumSketch(p) {
   let a1_v = 0
   let a2_v = 0
 
+  // user adjustable values
+  let gVal = 1
+  let m1Val = 10
+  let m2Val = 10
+  let r1Val = 140
+  let r2Val = 200
+  let dampMult = 0.99999999999
+
   let px2 = -1
   let py2 = -1
   let cx, cy
 
   let cnv
 
-  let gSlider = p.createSlider(0.1, 4, 1, 0.1)
-  gSlider.style('width', '200px')
-
-  let m1Slider = p.createSlider(1, 100, 10, 1)
-  m1Slider.style('width', '200px')
-
-  let m2Slider = p.createSlider(1, 100, 10, 1)
-  m2Slider.style('width', '200px')
-
-  let r1Slider = p.createSlider(1, 200, 120, 1)
-  r1Slider.style('width', '200px')
-
-  let r2Slider = p.createSlider(1, 300, 225, 1)
-  r2Slider.style('width', '200px')
-
-  let dampeningSlider = p.createSlider(0.99, 0.99999999, 0.99999999, 0.00001)
-  dampeningSlider.style('width', '200px')
-
   p.setup = function () {
-    p.createCanvas(800, 600)
+    p.createCanvas(700, 600)
     p.pixelDensity(1)
     a1 = p.PI / 2
     a2 = p.PI / 2
@@ -37,18 +27,12 @@ export default function pendulumSketch(p) {
     cy = 50
 
     cnv = p.createGraphics(p.width, p.height)
-    cnv.background(220)
+    cnv.background(255)
     cnv.translate(cx, cy)
   }
 
   p.draw = function () {
-    let gVal = gSlider.value()
-    let m1Val = m1Slider.value()
-    let m2Val = m2Slider.value()
-    let r1Val = r1Slider.value()
-    let r2Val = r2Slider.value()
-
-    p.background(220)
+    p.background(255)
     p.imageMode(p.CORNER)
     p.image(cnv, 0, 0, p.width, p.height)
 
@@ -89,9 +73,8 @@ export default function pendulumSketch(p) {
     a1 += a1_v
     a2 += a2_v
 
-    // dampening
-    a1_v *= dampeningSlider.value()
-    a2_v *= dampeningSlider.value()
+    a1_v *= dampMult
+    a2_v *= dampMult
 
     cnv.stroke(24, 52, 70)
     cnv.strokeWeight(1)
@@ -101,5 +84,29 @@ export default function pendulumSketch(p) {
 
     px2 = x2
     py2 = y2
+
+    p.changeGravity = function (e) {
+      gVal = e.target.value
+    }
+
+    p.changeMass1 = function (e) {
+      m1Val = e.target.value
+    }
+
+    p.changeMass2 = function (e) {
+      m2Val = e.target.value
+    }
+
+    p.changePendLen1 = function (e) {
+      r1Val = e.target.value
+    }
+
+    p.changePendLen2 = function (e) {
+      r2Val = e.target.value
+    }
+
+    p.changeDampening = function (e) {
+      dampMult = e.target.value
+    }
   }
 }

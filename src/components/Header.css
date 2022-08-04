@@ -17,11 +17,6 @@
   color: #183446;
 }
 
-span {
-  font-weight: bold;
-  color: rgb(210, 115, 0);
-}
-
 .three-col-grid__expand-two {
   display: grid;
   grid-template-columns: auto 1fr auto;

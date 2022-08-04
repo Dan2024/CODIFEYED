@@ -9,11 +9,10 @@ export default function PendulumPage() {
           <div className='pendulum-styling__card'></div>
           <div className='pendulum-card'>
             <div className='pendulum-card__info-container'>
-              <div className='pendulum-card__title'>(Double) Pendulum</div>
-              <div className='pendulum-card__info-text'>hhhhhh</div>
-              <div className='pendulum-card__cta'>
-                <span className='highlighted-text'>CLICK THE CANVAS</span> TO
-                GROW YOUR FIRST FRACTAL TREE
+              <div className='pendulum-card__title'>Pendulum</div>
+              <div className='pendulum-card__info-text'>
+                <span className='highlighted-text'>ADJUST THE CONTROLS</span> TO
+                SEE HOW THE PENDULUM BEHAVES UNDER DIFFERENT CONDITIONS
               </div>
             </div>
             <PendulumComponent />

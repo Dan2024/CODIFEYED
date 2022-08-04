@@ -7,7 +7,7 @@ export default function Header() {
     <div className='header three-col-grid__expand-two'>
       <Link to={'/'} style={{ textDecoration: 'none', color: 'black' }}>
         <div className='header-title'>
-          CODIF<span>EYE</span>D
+          CODIF<span className='highlighted-text'>EYE</span>D
         </div>
       </Link>
 
