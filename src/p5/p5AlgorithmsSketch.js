@@ -14,6 +14,7 @@ export default function algorithmSketch(p) {
     p.createCanvas(550, 300)
     if (sharedValues.length === 0) {
       sharedValues = new Array(p.floor(p.width / w))
+
       for (let i = 0; i < sharedValues.length; i++) {
         sharedValues[i] = p.random(p.height)
       }
