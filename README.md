@@ -1,8 +1,8 @@
 # WHY CODIFEYED?
 
-I wanted to explore computer science topics that were only breifly covered in my bootcamp - things like sorting algorithms, Bid O Notation, recursion etc. And i wanted to do so in a visual way.
+I wanted to explore computer science topics that were only breifly covered in my bootcamp - things like sorting algorithms, Big O Notation, recursion etc. And i wanted to do so in a visual way.
 
-You can explore my project here (add link to project)
+## You can explore my project here (add link to project)
 
 # Highlights
 
