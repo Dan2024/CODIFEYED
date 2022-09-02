@@ -19,7 +19,7 @@ export default function pendulumSketch(p) {
   let cnv
 
   p.setup = function () {
-    p.createCanvas(700, 500)
+    p.createCanvas(700, 600)
     p.pixelDensity(1)
     a1 = p.PI / 2
     a2 = p.PI / 2
