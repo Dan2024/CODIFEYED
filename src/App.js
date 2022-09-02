@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <Routes>
+      <Routes basename='CODIFEYED'>
         <Route path='/' element={<HomePage />} />
         <Route path='algorithm-visualizer' element={<AlgorithmVisualizer />} />
         <Route path='fractal-forest' element={<FractalForest />} />
