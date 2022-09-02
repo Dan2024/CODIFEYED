@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/CODIFEYED/static/css/main.1a734298.css",
-    "main.js": "/CODIFEYED/static/js/main.e39532c3.js",
+    "main.js": "/CODIFEYED/static/js/main.8c86ef5c.js",
     "index.html": "/CODIFEYED/index.html",
     "main.1a734298.css.map": "/CODIFEYED/static/css/main.1a734298.css.map",
-    "main.e39532c3.js.map": "/CODIFEYED/static/js/main.e39532c3.js.map"
+    "main.8c86ef5c.js.map": "/CODIFEYED/static/js/main.8c86ef5c.js.map"
   },
   "entrypoints": [
     "static/css/main.1a734298.css",
-    "static/js/main.e39532c3.js"
+    "static/js/main.8c86ef5c.js"
   ]
 }
