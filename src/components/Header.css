@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   background: white;
-  max-width: 100rem;
+  max-width: 75rem;
   margin: 0 auto;
   z-index: 10;
   margin-bottom: 1rem;
@@ -11,7 +11,7 @@
 
 .header-title {
   margin-inline: 2rem;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: bold;
   text-align: center;
   color: #183446;

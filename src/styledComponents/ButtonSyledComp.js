@@ -9,10 +9,10 @@ export const Button = styled.button`
   color: white;
   font-family: poppins;
   font-weight: bold;
-  font-size: 0.9rem;
-  height: 3rem;
+  font-size: 0.6rem;
+  height: 2.3rem;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
 
   &:hover {
     background-color: transparent;

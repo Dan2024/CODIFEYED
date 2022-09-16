@@ -4,20 +4,20 @@
 }
 
 .mission-statement {
-  max-width: 100rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding-left: 2rem;
-  font-size: 1.8rem;
-  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 2.7rem;
 }
 
 .hero-card__list {
   padding-inline: 2rem;
-  max-width: 100rem;
+  max-width: 75rem;
   margin: 0 auto;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .hero-card__styling-container {
@@ -27,6 +27,7 @@
 
 @media only screen and (max-width: 700px) {
   .hero-card__list {
+    padding-inline: 0.4rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .mission-statement {

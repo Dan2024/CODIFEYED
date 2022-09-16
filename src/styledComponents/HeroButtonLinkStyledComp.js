@@ -5,15 +5,15 @@ export const HeroButtonLink = styled(Link)`
   display: grid;
   place-items: center;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: normal;
   background: #183446;
   box-shadow: rgba(25, 25, 26, 0.3) 0px 8px 24px;
   border-radius: 2rem;
   margin: 3rem;
   grid-area: 1/1;
-  height: 20%;
-  width: 35%;
+  height: 17%;
+  width: 10rem;
   align-self: end;
   justify-self: right;
   z-index: 2;
