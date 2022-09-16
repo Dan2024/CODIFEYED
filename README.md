@@ -2,7 +2,7 @@
 
 I wanted to explore computer science topics that were only breifly covered in my bootcamp - things like sorting algorithms, Big O Notation, recursion etc. And i wanted to do so in a visual way.
 
-## You can explore my project <a href='https://codifeyed.vercel.app/'></a>
+## You can explore my project <a href='https://codifeyed.vercel.app/'>here</a>
 
 # Highlights
 
