@@ -1,6 +1,6 @@
 export default function customizableTreeSketch(p) {
   const lSystemTreeObj1 = {
-    len: 110,
+    len: 90,
     lenMult: 0.6,
     axiom: 'F',
     angle: p.radians(p.random(20, 30)),
@@ -19,13 +19,13 @@ export default function customizableTreeSketch(p) {
       },
     ],
     clear: function (tree) {
-      tree.len = 110
+      tree.len = 90
       tree.axiom = 'F'
     },
   }
 
   const lSystemTreeObj2 = {
-    len: 110,
+    len: 87,
     lenMult: 0.83,
     axiom: 'VZFFF',
     angle: p.radians(p.random(20, 30)),
@@ -52,13 +52,13 @@ export default function customizableTreeSketch(p) {
       },
     ],
     clear: function (tree) {
-      tree.len = 110
+      tree.len = 87
       tree.axiom = 'VZFFF'
     },
   }
 
   const lSystemTreeObj3 = {
-    len: 110,
+    len: 90,
     lenMult: 0.63,
     axiom: 'Y',
     angle: p.radians(p.random(20, 30)),
@@ -73,13 +73,13 @@ export default function customizableTreeSketch(p) {
       },
     ],
     clear: function (tree) {
-      tree.len = 110
+      tree.len = 90
       tree.axiom = 'Y'
     },
   }
 
   const lSystemTreeObj4 = {
-    len: 110,
+    len: 90,
     lenMult: 0.57,
     axiom: 'X',
     angle: p.radians(p.random(20, 30)),
@@ -94,13 +94,13 @@ export default function customizableTreeSketch(p) {
       },
     ],
     clear: function (tree) {
-      tree.len = 110
+      tree.len = 90
       tree.axiom = 'X'
     },
   }
 
   const lSystemTreeObj5 = {
-    len: 120,
+    len: 80,
     lenMult: 0.55,
     axiom: 'F',
     angle: p.radians(p.random(20, 30)),
@@ -111,13 +111,13 @@ export default function customizableTreeSketch(p) {
       },
     ],
     clear: function (tree) {
-      tree.len = 120
+      tree.len = 80
       tree.axiom = 'F'
     },
   }
 
   const lSystemTreeObj6 = {
-    len: 120,
+    len: 90,
     axiom: 'F',
     lenMult: 0.57,
     angle: p.radians(p.random(20, 30)),
@@ -128,7 +128,7 @@ export default function customizableTreeSketch(p) {
       },
     ],
     clear: function (tree) {
-      tree.len = 120
+      tree.len = 90
       tree.axiom = 'F'
     },
   }
@@ -151,7 +151,7 @@ export default function customizableTreeSketch(p) {
   let tree = p.getNewTree()
 
   p.setup = function () {
-    p.createCanvas(600, 700)
+    p.createCanvas(600, 600)
     p.background(220)
     p.drawTree()
 

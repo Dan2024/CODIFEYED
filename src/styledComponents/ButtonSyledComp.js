@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
   box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
   border-radius: 1rem;
   border: 1px solid #183446;
@@ -9,8 +9,8 @@ export const Button = styled.button`
   color: white;
   font-family: poppins;
   font-weight: bold;
-  font-size: 0.6rem;
-  height: 2.3rem;
+  font-size: 0.7rem;
+  height: 2.5rem;
   width: 100%;
   margin-top: 1.3rem;
 

@@ -15,8 +15,8 @@
 }
 
 .tree-card__list {
-  margin-inline: 4rem;
-  max-width: 100rem;
+  margin-inline: auto;
+  max-width: 75rem;
   margin-top: 3rem;
   display: grid;
   gap: 3rem;
@@ -31,13 +31,11 @@
 .tree-card__title {
   color: #183446;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
 .tree-card__text {
-  font-size: 1.5rem;
-
   margin-top: 5%;
   margin-left: 5%;
 }
@@ -65,6 +63,7 @@
 }
 
 .tree-card__cta {
+  font-size: 0.9rem;
   text-align: center;
   text-justify: end;
   margin-top: 1rem;
@@ -75,6 +74,7 @@
 }
 
 .tree-card__info-text {
+  font-size: 0.9rem;
   text-align: center;
   margin-top: 5%;
 }

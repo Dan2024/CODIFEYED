@@ -11,7 +11,7 @@ export default function algorithmSketch(p) {
   let values
 
   p.setup = function () {
-    p.createCanvas(550, 300)
+    p.createCanvas(500, 250)
     if (sharedValues.length === 0) {
       sharedValues = new Array(p.floor(p.width / w))
 
