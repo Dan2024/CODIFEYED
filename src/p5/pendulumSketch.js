@@ -8,8 +8,8 @@ export default function pendulumSketch(p) {
   let gVal = 1
   let m1Val = 10
   let m2Val = 10
-  let r1Val = 140
-  let r2Val = 200
+  let r1Val = 80
+  let r2Val = 100
   let dampMult = 0.99999999999
 
   let px2 = -1
@@ -19,7 +19,7 @@ export default function pendulumSketch(p) {
   let cnv
 
   p.setup = function () {
-    p.createCanvas(700, 600)
+    p.createCanvas(600, 400)
     p.pixelDensity(1)
     a1 = p.PI / 2
     a2 = p.PI / 2
